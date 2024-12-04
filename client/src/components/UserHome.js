@@ -5,7 +5,7 @@ import Image from "../Images/profile2.png"
 const UserHome = () => {
     const dispatch = useDispatch() ;
     useEffect(()=>{
-        dispatch(userProfile())
+        dispatch(userProfile())//use for api call
     },[])
     const {currentUser} = useSelector(state => state.userProfileReducer) ;
     console.log("UserHome",currentUser)

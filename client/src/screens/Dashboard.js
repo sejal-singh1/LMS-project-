@@ -7,9 +7,9 @@ import AllStudent from "./AllStudent"
 import IssueRequest from "./IssueRequest"
 import UserHome from "../components/UserHome"
 import UserIssuedBook from "./UserIssuedBook"
-import Recom_Book from "./Recom_Book"
-import RecomdationBook from "./Recommdation"
-import Messages from "./Messages"
+
+
+
 import AllIssuedBook from "./AllissuedBook"
 import Navbar from "../components/Navbar"
 import IssueReturn from "./Issue_Return";
@@ -35,10 +35,10 @@ const Dashboard = () => {
                 <Route path="/dashboard/manageStudent" component={AllStudent} exact />
                 <Route path="/dashboard/issuedBook" component={UserIssuedBook} exact /> 
                 <Route path="/dashboard/allissuedBook" component={AllIssuedBook} exact /> 
-                <Route path="/dashboard/RecomBook" component={Recom_Book} exact /> 
-                <Route path="/dashboard/Recommandation" component={RecomdationBook} exact /> 
+                
+                
                 <Route path="/dashboard/stuReqIssue" exact component={IssueRequest} />
-                <Route path="/dashboard/messages" exact component={Messages} />
+            
                 <Route path="/dashboard/issue_return" exact component={IssueReturn} />
                 <Route path="/dashboard/returnBook" exact component={ReturnBook} />
                 <Route path="/dashboard/addEmployee" exact component={Addemployee} />
