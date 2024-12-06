@@ -20,20 +20,7 @@ router.post("/addBook", async (req, res) => {
     const book = await new Book({ title,author,publisher,year,copies})
     await book.save()
 
-    // const book = new Book({
-    //     title,author,publisher,year,copies
-    // })
-    // book.save().then(result => {
-    //     res.status(201).json({
-    //         message: "Done upload!",
-            
-    //     })
-    // }).catch(err => {
-    //     console.log(err),
-    //         res.status(500).json({
-    //             error: err
-    //         });
-    // })
+   
  
 })
 router.get("/allBook", (req, res) => {

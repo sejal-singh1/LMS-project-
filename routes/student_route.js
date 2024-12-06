@@ -100,7 +100,7 @@ router.get("/allStudent", (req, res) => {
 
 router.post("/removeStudent", async (req, res) => {
   try {
-    await Student.findOneAndDelete({ _id: req.body.postId });
+    await Student.findOneAndDelete({ _id: req.body._id });
 
     res.send("you successfully remove the student");
   } catch (error) {
